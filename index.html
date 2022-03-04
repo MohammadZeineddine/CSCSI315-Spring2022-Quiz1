@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz1-Zeineddine</title>
+    <meta name="description" content="Quiz1">
+    <style>
+      main {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .middle {
+        width: 33.33%;
+        float: left;
+      }
+      footer {
+        clear: both;
+        text-align: center;
+      }
+      ul
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .col1 {
+        background-color: lightgreen;
+      }
+      .cat {
+        width: 100%;
+      }
+      .col3 {
+        background-color: blueviolet;
+      }
+      .drop {
+      background-color: tomato;
+      color: white;
+      padding: 15px;
+      font-size: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropmenu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .content {
+      display: none;
+      position: absolute;
+      background-color: gray;
+      min-width: 150px;
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .content a {
+      color: black;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropmenu:hover a {
+      background-color: lightseagreen;
+    }
+
+    .dropmenu:hover .content {
+      display: block;
+    }
+
+    .dropmenu:hover .drop {
+      background-color: tomato;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .middle {
+        float: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mohammad Zeineddine's attempt</h1>
+    </header>
+
+    <main>
+        <div class="middle col1">
+          <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Articles">Articles</a></li>
+            <li><a href="Pictures">Pictrues</a></li>
+            <li><a href="About">About</a></li>
+          </ul>
+
+          <div class="dropmenu">
+            <button class="drop">Display Doctors</button>
+            <div class="content">
+              <a href="#DrSami">DrSami</a>
+              <a href="#DrWasim">DrWasim</a>
+              <a href="#DrSamer">DrSamer</a>
+              <a href="#DrAmer">DrAmer</a>
+            </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="middle col2">
+          <img  class="middle cat" src="cat.jpg" alt="cute cat">
+        </div>
+        <div class="middle col3">
+          <nav>
+            <a href="Persian">Persian</a>
+            <a href="Maine">Maine</a>
+            <a href="Bengal">Bengal</a>
+            <a href="British">British</a>
+          </nav>
+        </div>
+    </main>
+    <footer>
+      <br>
+      <hr>
+      <h6>The end of page</h6>
+    </footer>
+  </body>
+</html>
